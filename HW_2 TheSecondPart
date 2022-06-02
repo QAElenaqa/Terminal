@@ -1,6 +1,7 @@
 1. Сделать папку dir_1
 
 mkdir dir_1
+
  2. Зайти в папку dir_1
 
 
@@ -24,26 +25,137 @@ mkdir dir_1
 
  8. Через cat сделать текстовый файл tf_3.txt  c любыми строками
 
+cat >> tf_3.txt
+
+homework
+hello
+terminal
+123
+456
+789
+987
+654
+321
+good
+gob
+159
+357
+
+see you
 
  9. Через cat добавить в текстовый файл tf_3.txt строку “the second 2”
 
+cat >> tf_3.txt
+"The second 2"
 
  10. Через cat добавить в текстовый файл tf_3.txt строку “the sec 2”
 
+cat >> tf_3.txt
+"The sec 2"
 
  11. Через cat добавить в текстовый файл tf_2.txt строку “the sec 3”
 
+cat >> tf_2.txt
+"The sec 3"
 
  12. Через cat добавить в текстовый файл tf_3.txt строку “the SeCoNd 2”
+
+ cat >> tf_3.txt
+"the SeCoND 2"
+
  13. Через cat добавить в текстовый файл tf_2.txt строку “the seConD 2”
+
+cat >> tf_2.txt
+"the seConD 2"
+
  14. Сделать текстовый файл tf_4.txt в котором будет 15 строк.
+
+ cat >> tf_4.txt
+sec
+Sec
+SeCon
+Descon
+Con
+Sec
+Ces
+SEC
+sec
+second
+cODN
+CON
+Scond
+2
+222
+
  15. Сделать текстовый файл tF_5.txt в котором будет 13 строк.
+
+ cat >> tF_5.txt
+1
+2
+3
+4
+5
+6
+7
+8
+9           
+10
+11
+12
+13
+
  16. Вывести список всех файлов в папке.
+
+ls -la
+
  17. Выйти из папки inner_dir_1
+
+ cd ..
+
  18. Вывести содержимое файла tf_3.txt в терминал.
+
+grep "" inner_dir_1/tf_3.txt
+homework
+hello
+terminal
+123
+456
+789
+987
+654
+321
+good
+gob
+159
+357
+
+see you
+"The second 2"
+"The sec 2"
+"the SeCoND 2"
+
  19. Найти путь к файлу tf_4.txt
+
+ find . -name tf_4.txt
+
+./inner_dir_1/tf_4.txt
+
  20. Отчистить файл tf_4.txt от содержимого без удаления самого файла.
+
+ cat /dev/null > tf_4.txt
+
  21. Найти путь к файлам у которых есть  “tf” в названии.
+
+ find . -name "tf*.txt"
+ find . -name "*tf*.txt"
+
+./tf_4.txt
+./Desktop/Terminal/dir_1/tf_1.txt
+./Desktop/Terminal/dir_1/tf_2.txt
+./Desktop/Terminal/inner_dir_1/tf_3.txt
+./Desktop/Terminal/inner_dir_1/tf_4.txt
+./Desktop/Terminal/inner_dir_1/tf_2.txt
+
  22. Найти путь к файлам у которых есть  “tf” в названии и буквы в любом регистре.
  23. Найти строки в файлах где есть комбинация букв “sec” в текущей папке
  24. Найти строки в файлах где есть комбинация букв “sec” в любом регистре в текущей папке
