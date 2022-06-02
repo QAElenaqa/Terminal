@@ -103,4 +103,24 @@ curl "http://162.55.220.72:5005/get_method?name=Elena&age=36" - отправля
 
 2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
 
+1. заходим в папку, в которой будем создавать скрипт
+2. в терминале команду пишем nano bash_script.sh
+3. создаем bash_script
+
+#!/bin/bash
+
+cd group_30
+mkdir Q1 Q2 Q3
+cd Q1
+touch q1.txt q2.txt q3.txt q4.json q5.json
+mkdir Q4 Q5 Q6
+ls -la
+mv /home/INTEXSOFT/elena.kulesh/Desktop/Terminal/group_30/Q1/{q2.txt,q1.txt} /home/INTEXSOFT/elena.kulesh/Desktop/Terminal/group_30/Q2
+echo "Все готово!!!"
+
+сохраняем Сtrl+O, потом отказываемся от каких-либо изменений и нажимаем Enter.
+
+4. Затем в терминале прописываем команду для запуска скрипта
+
+bash bash_script.sh
 
